@@ -1,0 +1,19 @@
+<main id="category" class="py-5 px-3">
+    <h1>Blog de développeur</h1>
+
+    <h2>Catégories</h2>
+    <ul>
+        <?php foreach($categories as $category) { ?>
+        <li>
+            <article>
+                <header>
+                    <h3><?= $category->getTitle() ?></h3>
+                </header>
+                <section>
+                    <p><?= $category->getDescription() ?></p>
+                </section>
+            </article>
+        </li>
+    <?php } ?>
+    </ul>
+</main>
